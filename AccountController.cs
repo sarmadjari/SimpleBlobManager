@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 
 [AllowAnonymous]
+[AutoValidateAntiforgeryToken]
 public class AccountController : Controller
 {
     public IActionResult Login(string returnUrl = "/")
