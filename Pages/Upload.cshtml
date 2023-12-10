@@ -1,0 +1,13 @@
+@page
+@model UploadModel
+
+<h2>Upload File</h2>
+
+<form method="post" enctype="multipart/form-data">
+    <div>
+        <label asp-for="FileUpload"></label>
+        <input asp-for="FileUpload" type="file" />
+        <span asp-validation-for="FileUpload" class="text-danger"></span>
+    </div>
+    <button type="submit">Upload</button>
+</form>

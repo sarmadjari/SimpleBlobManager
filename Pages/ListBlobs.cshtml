@@ -1,0 +1,19 @@
+@page
+@model ListBlobsModel
+@{
+    ViewData["Title"] = "List of Blobs";
+}
+
+<h1>List of Blobs (Files)</h1>
+<ul>
+    @foreach (var blob in Model.Blobs)
+    {
+        <li>
+            <a asp-page="/Download" asp-route-containerName="myfiles" asp-route-blobName="@blob.Name">Download @blob.Name</a>
+            <!-- Delete button -->
+            <form asp-page-handler="Delete" asp-route-blobName="@blob.Name" method="post" onsubmit="return confirm('Are you sure you want to delete this?');">
+                <button type="submit" class="delete-button">Delete</button>
+            </form>
+        </li>
+    }
+</ul>
