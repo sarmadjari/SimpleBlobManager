@@ -1,4 +1,5 @@
 # Simple Blob Manager
+[![.NET](https://github.com/sarmadjari/SimpleBlobManager/actions/workflows/dotnet-test.yml/badge.svg)](https://github.com/sarmadjari/SimpleBlobManager/actions/workflows/dotnet-test.yml)
 
 This project showcases a web application designed to interact with Azure Blob Storage, featuring an audit function that logs activities in Azure Tables. It's an excellent example of utilizing .Net 8.0 and the Azure SDK to create cloud-based applications.
 
